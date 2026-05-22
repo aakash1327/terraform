@@ -6,6 +6,7 @@ module "ec2_instance" {
   instance_type          = var.instance_type
   subnet_id              = data.aws_subnets.default.ids[0]
   vpc_security_group_ids = [data.aws_security_group.default.id]
+  key_name               = var.key_name
 
   associate_public_ip_address = var.associate_public_ip_address
   root_volume_size            = var.root_volume_size
