@@ -10,6 +10,8 @@ associate_public_ip_address = true
 root_volume_size = 30
 root_volume_type = "gp3"
 
+s3_bucket_name = "my-terraform-bucket-aakash"
+
 tags = {
   Environment = "dev"
   Project     = "terraform-ec2"
